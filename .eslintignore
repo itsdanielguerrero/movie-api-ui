@@ -1,0 +1,5 @@
+# Ignore built files
+public
+
+# Ignore Webpack build file
+webpack.dev.js
