@@ -1,11 +1,12 @@
 /* eslint-disable max-len */
 import express from 'express'
 import path from 'path'
-import { getDirectorById } from './controllers/directors'
-import { getGenreById } from './controllers/genres'
+import getDirectorById from './controllers/directors'
+import getGenreById from './controllers/genres'
 import {
   getAllMovies, getMovieById, postNewMovie, patchMovie, deleteMovieById,
 } from './controllers/movies'
+
 
 const app = express()
 const PORT = process.env.PORT || 1338

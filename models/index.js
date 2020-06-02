@@ -1,12 +1,12 @@
 import Sequelize from 'sequelize'
-import AllConfigs from '../config/sequelize'
+import allConfigs from '../config/sequelize'
 import MovieModel from './movies'
 import DirectorsModel from './directors'
 import GenresModel from './genres'
 import MoviesDirectorsModel from './moviesDirectors'
 import MoviesGenresModel from './moviesGenres'
 
-const config = AllConfigs.development
+const config = allConfigs.development
 
 const connection = new Sequelize(config.database, config.username, config.password, {
   host: config.host,
